@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this , MainActivity2.class);
                 startActivity(intent);
-
             }
         });
 
@@ -66,7 +65,5 @@ public class MainActivity extends AppCompatActivity {
                 textView2.setText(Integer.toString(number++));
             }
         });
-
-
     }
 }
