@@ -6,6 +6,11 @@ android {
     namespace 'com.example.counter'
     compileSdk 33
 
+
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.example.counter"
         minSdk 24
