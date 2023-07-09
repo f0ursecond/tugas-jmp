@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     Button counter;
 
     Button button2;
+
+    Button button3;
     Button button4;
 
 
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         toastButton = findViewById(R.id.toastButton);
         counter = findViewById(R.id.counterButton);
         button2 = findViewById(R.id.button2);
+        button3 = findViewById(R.id.button3);
         button4 = findViewById(R.id.button4);
 
 
@@ -43,6 +46,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this , MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(MainActivity.this, MainActivity4.class);
+                startActivity(intent3);
+            }
+        });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,13 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this , MainActivity2.class);
-                startActivity(intent);
-            }
-        });
+
 
         counter.setOnClickListener(new View.OnClickListener() {
             @Override

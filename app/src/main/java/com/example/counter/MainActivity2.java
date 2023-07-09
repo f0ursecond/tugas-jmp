@@ -8,10 +8,15 @@ import android.widget.EditText;
 
 import com.example.counter.databinding.ActivityMain2Binding;
 
+import java.util.Objects;
+
 
 public class MainActivity2 extends AppCompatActivity {
 
     ActivityMain2Binding binding;
+
+
+
 
 
     @Override
@@ -23,7 +28,7 @@ public class MainActivity2 extends AppCompatActivity {
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String userText = binding.textInputEditText.getText().toString();
+                String userText = Objects.requireNonNull(binding.textInputEditText.getText()).toString();
                 binding.textView.setText(userText);
             }
         });
