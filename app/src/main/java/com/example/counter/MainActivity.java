@@ -13,13 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView2;
-    Button toastButton;
-    Button counter;
-
-    Button button2;
-
-    Button button3;
-    Button button4;
+    Button button2, button3 ,button4 , button5, toastButton , counter;
 
 
     private int number =0;
@@ -37,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
         button4 = findViewById(R.id.button4);
+        button5 = findViewById(R.id.button5);
 
 
         toastButton.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent2 = new Intent(MainActivity.this, MainActivity3.class);
                 startActivity(intent2);
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent crudPage = new Intent(MainActivity.this, MainActivity5.class);
+                startActivity(crudPage);
             }
         });
 
