@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         counter.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 textView2.setText(Integer.toString(number++));
